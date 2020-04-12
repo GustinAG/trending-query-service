@@ -66,6 +66,9 @@ ls -ln
 ---
 ## Architecture Patterns <br /> <small> *covered in this sample* </small>
  + **C**ommand **Q**uery **R**esponsibility **S**egragation
+ + **D**ata **T**ransfer **O**bjects
+ + Reporting Database
 
 ### See Also
  + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
+ + &rarr; [Reporting Database *(Fowler)*](https://martinfowler.com/bliki/ReportingDatabase.html)
