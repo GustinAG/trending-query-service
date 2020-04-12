@@ -11,6 +11,7 @@
  + &rarr; [MongoDB C#/.NET Driver](https://docs.mongodb.com/drivers/csharp)
  + &rarr; [Quick Start: C# and MongoDB - Starting and Setup](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)
  + &rarr; [Quick Start: C# and MongoDB - Read Operations](https://www.mongodb.com/blog/post/quick-start-c-and-mongodb--read-operations)
+ + &rarr; [Quick Start: C# and MongoDB - Creating Documents](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb--creating-documents)
 
 ```Batchfile
 docker pull mongo
