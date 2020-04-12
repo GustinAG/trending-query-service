@@ -10,7 +10,7 @@ On the other hand, with the help of this sample code, you will ***not*** see the
 
 ---
 ## What You Need for This
- + Visual Studio 2019 - *or higher* - incl.:
+ + Visual Studio 2019 - *or higher* - ***Run as Administrator*** - incl.:
     + C# stuff
     + .NET Core 3.1
     + Markdown Editor

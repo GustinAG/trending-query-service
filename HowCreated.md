@@ -5,6 +5,12 @@
 
 ## Further VS Stuff
  + &rarr; [Visual Studio 2019 Launch: Docker all the things!](https://youtu.be/Tlswgxl_Xyk)
+ + &rarr; [CreateAppHost runs and fails during VS design time build if project isn't already built](https://github.com/dotnet/sdk/issues/2599)
+
+> + go to Virus & threat protection
+> + Manage settings
+> + Add or remove exclusions
+> + Add an exclusion to the parent folder for all your repositories
 
 ## MongoDB
  + &rarr; [Getting Started With MongoDB As A Docker Container Deployment](https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment)
