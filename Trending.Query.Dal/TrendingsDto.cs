@@ -1,4 +1,4 @@
-﻿namespace Trending.Query.Api.Controllers
+﻿namespace Trending.Query.Dal
 {
     public class TrendingsDto
     {

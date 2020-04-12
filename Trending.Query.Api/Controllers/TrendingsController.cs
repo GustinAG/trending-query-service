@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Trending.Query.Dal;
 
 namespace Trending.Query.Api.Controllers
 {
@@ -7,10 +8,6 @@ namespace Trending.Query.Api.Controllers
     public class TrendingsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<TrendingsDto> Get()
-        {
-            var dto = new TrendingsDto { ShortTrendingArticleIds = new[] { 1, 3 }, LongTrendingArticleIds = new[] { 2 } };
-            return dto;
-        }
+        public ActionResult<TrendingsDto> Get() => ArticleTrendingsDal.GetAll();
     }
 }

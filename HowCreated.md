@@ -10,6 +10,7 @@
  + &rarr; [Getting Started With MongoDB As A Docker Container Deployment](https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment)
  + &rarr; [MongoDB C#/.NET Driver](https://docs.mongodb.com/drivers/csharp)
  + &rarr; [Quick Start: C# and MongoDB - Starting and Setup](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)
+ + &rarr; [Quick Start: C# and MongoDB - Read Operations](https://www.mongodb.com/blog/post/quick-start-c-and-mongodb--read-operations)
 
 ```Batchfile
 docker pull mongo
