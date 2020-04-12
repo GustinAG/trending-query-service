@@ -21,6 +21,34 @@ On the other hand, with the help of this sample code, you will ***not*** see the
     + Notepad++ including XML Tools
 
 ---
+## How This Was Created
+&rarr; [HowCreated.md](HowCreated.md)
+
+## How To...
+### Start
+```Batchfile
+docker ps
+docker start mongodb
+docker exec -it mongodb bash
+```
+<center> &darr; </center>
+
+```Bash
+mongo
+```
+<center> &darr; </center>
+
+```SQL
+show dbs
+use articletrendings
+db.trendings.find()
+```
+### Stop
+```Batchfile
+docker stop mongodb
+```
+
+---
 ## Docker Basics
 In a command prompt run as administrator:
 ```Batchfile
