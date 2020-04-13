@@ -8,6 +8,6 @@ namespace Trending.Query.Api.Controllers
     public class TrendingsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<TrendingsDto> Get() => ArticleTrendingsDal.GetAll();
+        public ActionResult<TrendingsDto> Get() => new ArticleTrendingsDal().GetAll();
     }
 }

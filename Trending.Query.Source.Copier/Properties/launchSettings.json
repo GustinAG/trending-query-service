@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Trending.Query.Source.Copier": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

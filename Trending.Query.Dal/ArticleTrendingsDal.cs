@@ -5,18 +5,13 @@ using MongoDB.Driver;
 
 namespace Trending.Query.Dal
 {
-    public static class ArticleTrendingsDal
+    public sealed class ArticleTrendingsDal : TrendingDal
     {
-        private const string MongoIp = "172.17.0.3";     // TODO: Fix this magic IP in Docker Compose!
-        private const string MongoUrl = "mongodb://" + MongoIp + ":27017";
-        private const string DbName = "articletrendings";
-        private const string CollectionName = "trendings";
+        public ArticleTrendingsDal() : base(TrendingDatabase.Reporting, "trendings") { }
 
-        public static TrendingsDto GetAll()
+        public TrendingsDto GetAll()
         {
-            var dbClient = new MongoClient(MongoUrl);
-            var db = dbClient.GetDatabase(DbName);
-            var collection = db.GetCollection<BsonDocument>(CollectionName);
+            var collection = GetCollection();
             var shortTrendingDocument = GetTrendingDocument(collection, "short");
             var longTrendingDocument = GetTrendingDocument(collection, "long");
 

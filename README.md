@@ -43,6 +43,19 @@ show dbs
 use articletrendings
 db.trendings.find()
 ```
+
+### Check the Operational DB
+```SQL
+use trendingevents
+db.articleevents.find()
+```
+
+### Check the Reporting DB
+```SQL
+use articletrendings
+db.getCollectionInfos({ }, true)
+```
+
 ### Stop
 ```Batchfile
 docker stop mongodb
@@ -68,9 +81,14 @@ ls -ln
  + **C**ommand **Q**uery **R**esponsibility **S**egragation
  + **D**ata **A**ccess **L**ayer
  + **D**ata **T**ransfer **O**bject
+ + **E**xtract **T**ransform **L**oad 
  + Reporting Database
 
 ### See Also
  + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
  + &rarr; [Data access layer *(Wikipedia)*](https://en.wikipedia.org/wiki/Data_access_layer)
+ + &rarr; [Better Extract/Transform/Load (ETL) Practices in Data Warehousing (Continued) *(Goff)*](https://www.codemag.com/Article/1803051/Better-Extract-Transform-Load-ETL-Practices-in-Data-Warehousing-Continued)
+ + &rarr; [MongoDB ETL Best Practices](https://www.mongodb.com/partners/partner-program/technology/certification/etl-best-practices)
+ + &rarr; [MongoSyphon](https://github.com/johnlpage/MongoSyphon) - might be a better choice intead of these C# .NET Core scheduled jobs
+ + &rarr; [Ofelia - a job scheduler](https://github.com/mcuadros/ofelia) - might be the choice in a real world scenario
  + &rarr; [Reporting Database *(Fowler)*](https://martinfowler.com/bliki/ReportingDatabase.html)
