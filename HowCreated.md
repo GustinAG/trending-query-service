@@ -34,4 +34,7 @@ mongo
 
 ```SQL
 show dbs
+use articletrendings
+db.trendings.save({ type: "short", ids: [2, 7] })
+db.trendings.find()
 ```

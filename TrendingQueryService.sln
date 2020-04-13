@@ -7,14 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		HowCreated.md = HowCreated.md
 		README.md = README.md
-		under-construction.png = under-construction.png
 		VS.ASP.NET.Core.Web.API.png = VS.ASP.NET.Core.Web.API.png
 		VS.ASP.NET.Core.Web.App.png = VS.ASP.NET.Core.Web.App.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Api", "Trending.Query.Api\Trending.Query.Api.csproj", "{46E2827A-8E16-46AA-AA00-88B840D116B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Api", "Trending.Query.Api\Trending.Query.Api.csproj", "{46E2827A-8E16-46AA-AA00-88B840D116B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Dal", "Trending.Query.Dal\Trending.Query.Dal.csproj", "{DC5CF05F-C6E0-47B7-B169-01521D0A615D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Dal", "Trending.Query.Dal\Trending.Query.Dal.csproj", "{DC5CF05F-C6E0-47B7-B169-01521D0A615D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-# trending-query-service  <img src="under-construction.png" alt="under-construction" width="100" align="right" />
+# trending-query-service
 Trending CQRS Sample - Query microservice
 
 ---
@@ -66,9 +66,11 @@ ls -ln
 ---
 ## Architecture Patterns <br /> <small> *covered in this sample* </small>
  + **C**ommand **Q**uery **R**esponsibility **S**egragation
- + **D**ata **T**ransfer **O**bjects
+ + **D**ata **A**ccess **L**ayer
+ + **D**ata **T**ransfer **O**bject
  + Reporting Database
 
 ### See Also
  + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
+ + &rarr; [Data access layer *(Wikipedia)*](https://en.wikipedia.org/wiki/Data_access_layer)
  + &rarr; [Reporting Database *(Fowler)*](https://martinfowler.com/bliki/ReportingDatabase.html)

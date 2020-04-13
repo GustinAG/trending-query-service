@@ -1,11 +1,13 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using System.Linq;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Trending.Query.Dal
 {
     public static class ArticleTrendingsDal
     {
-        private const string MongoIp = "172.17.0.2";     // TODO: Fix this magic IP in Docker Compose!
+        private const string MongoIp = "172.17.0.3";     // TODO: Fix this magic IP in Docker Compose!
         private const string MongoUrl = "mongodb://" + MongoIp + ":27017";
         private const string DbName = "articletrendings";
         private const string CollectionName = "trendings";
@@ -20,8 +22,8 @@ namespace Trending.Query.Dal
 
             return new TrendingsDto
             {
-                ShortTrendingArticleIds = shortTrendingDocument.ToIntArray(),
-                LongTrendingArticleIds = longTrendingDocument.ToIntArray()
+                ShortTrendingArticleIds = GetIds(shortTrendingDocument),
+                LongTrendingArticleIds = GetIds(longTrendingDocument)
             };
         }
 
@@ -30,5 +32,10 @@ namespace Trending.Query.Dal
             var filter = Builders<BsonDocument>.Filter.Eq("type", type);
             return collection.Find(filter).FirstOrDefault();
         }
+
+        private static int[] GetIds(BsonDocument document) =>
+            document == null
+                ? new int[] { }
+                : document["ids"].AsBsonArray.Select(v => v.AsDouble).Select(Convert.ToInt32).ToArray();
     }
 }
