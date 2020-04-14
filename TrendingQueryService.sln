@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Dal", "Trend
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Source.Copier", "Trending.Query.Source.Copier\Trending.Query.Source.Copier.csproj", "{59860895-73F6-4DE8-A971-9DD660FB3761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Reporter", "Trending.Query.Reporter\Trending.Query.Reporter.csproj", "{7AC27B83-969D-4C7C-8488-4766EA20C668}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Reporter", "Trending.Query.Reporter\Trending.Query.Reporter.csproj", "{7AC27B83-969D-4C7C-8488-4766EA20C668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Dal.Tests", "Trending.Query.Dal.Tests\Trending.Query.Dal.Tests.csproj", "{A8770F62-5806-41F4-A727-D4E3B07A96BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Dal.Tests", "Trending.Query.Dal.Tests\Trending.Query.Dal.Tests.csproj", "{A8770F62-5806-41F4-A727-D4E3B07A96BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Reporter.Tests", "Trending.Query.Reporter.Tests\Trending.Query.Reporter.Tests.csproj", "{79DFF3DE-59B7-42BD-80EC-829049933762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DFF3DE-59B7-42BD-80EC-829049933762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DFF3DE-59B7-42BD-80EC-829049933762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DFF3DE-59B7-42BD-80EC-829049933762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DFF3DE-59B7-42BD-80EC-829049933762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

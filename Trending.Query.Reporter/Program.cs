@@ -19,8 +19,19 @@ namespace Trending.Query.Reporter
             var shortTrendStartTime = now.AddHours(-ShortTrendHours);
             var longTrendStartTime = now.AddHours(-LongTrendHours);
 
-            var extractor = new Extractor(sourceDal);
+            var extractor = new Extractor(sourceDal, shortTrendStartTime);
             var transformer = extractor.Extract(longTrendStartTime);
+            var shortTrendArticleIds = transformer.ShortTrendArticleIds;
+            var longTrendArticleIds = transformer.LongTrendArticleIds;
+
+            DisplayArticleIds("Short", shortTrendArticleIds);
+            DisplayArticleIds("Long", longTrendArticleIds);
+        }
+
+        private static void DisplayArticleIds(string which, int[] articleIds)
+        {
+            var ids = string.Join(", ", articleIds);
+            Console.WriteLine($"{which} trend: [{ids}]");
         }
     }
 }

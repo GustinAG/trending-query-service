@@ -4,13 +4,16 @@ using Trending.Query.Dal;
 
 namespace Trending.Query.Reporter
 {
-    internal class TrendingEvent
+    public class TrendingEvent
     {
-        internal TrendingEvent(BsonDocument document)
+        public const string ArticleIdFieldName = "article_Id";
+        public const string ScoreFieldName = "score";
+
+        public TrendingEvent(BsonDocument document)
         {
             TimeStamp = document[ArticleTrendingEventsDal.TimeStampFieldName].ToUniversalTime();
-            ArticleId = document["article_Id"].AsInt32;
-            Score = document["score"].AsInt32;
+            ArticleId = document[ArticleIdFieldName].AsInt32;
+            Score = document[ScoreFieldName].AsInt32;
         }
 
         internal DateTime TimeStamp { get; }
