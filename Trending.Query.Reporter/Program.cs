@@ -26,6 +26,15 @@ namespace Trending.Query.Reporter
 
             DisplayArticleIds("Short", shortTrendArticleIds);
             DisplayArticleIds("Long", longTrendArticleIds);
+
+            Save(destinationDal, shortTrendArticleIds, longTrendArticleIds);
+        }
+
+        private static void Save(ArticleTrendingsDal dal, int[] shortTrendArticleIds, int[] longTrendArticleIds)
+        {
+            var dto = new TrendingsDto { ShortTrendingArticleIds = shortTrendArticleIds, LongTrendingArticleIds = longTrendArticleIds };
+            dal.SaveAll(dto);
+            Console.WriteLine("Trendings updated.");
         }
 
         private static void DisplayArticleIds(string which, int[] articleIds)

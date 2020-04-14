@@ -30,13 +30,4 @@ docker exec -it mongodb bash
 
 ```Bash
 hostname -i
-mongo
-```
-<center> &darr; </center>
-
-```SQL
-show dbs
-use articletrendings
-db.trendings.save({ type: "short", ids: [2, 7] })
-db.trendings.find()
 ```

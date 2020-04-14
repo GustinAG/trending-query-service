@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <Version>0.0.0.2</Version>
+    <Version>0.0.1.0</Version>
     <Authors>Gustin AG</Authors>
     <Product>Trending CQRS Sample - Query API</Product>
     <Copyright>(c) Gustin AG 2020</Copyright>
