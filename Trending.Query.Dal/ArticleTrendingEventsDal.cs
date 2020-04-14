@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -6,9 +7,11 @@ namespace Trending.Query.Dal
 {
     public sealed class ArticleTrendingEventsDal : TrendingDal
     {
+        public const string TimeStampFieldName = "timestamp";
+
         // ReSharper disable once StringLiteralTypo
         // This is the name of the collection without separator - according to MongoDB naming conventions.
-        public ArticleTrendingEventsDal(TrendingDatabase database) : base(database, CollectionNameOf(database))
+        public ArticleTrendingEventsDal(IMongoConfig config, TrendingDatabase database) : base(config, database, CollectionNameOf(database))
         { }
 
         public ObjectId GetLastId()
@@ -25,6 +28,14 @@ namespace Trending.Query.Dal
             var collection = GetCollection();
             var filter = Builders<BsonDocument>.Filter.Gt(IdFieldName, id);
 
+            return collection.Find(filter).ToList();
+        }
+
+        public IList<BsonDocument> GetAllSince(DateTime startTime)
+        {
+            var collection = GetCollection();
+
+            var filter = Builders<BsonDocument>.Filter.Gt(TimeStampFieldName, new BsonDateTime(startTime));
             return collection.Find(filter).ToList();
         }
 

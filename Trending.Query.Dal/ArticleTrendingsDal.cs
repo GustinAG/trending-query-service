@@ -7,7 +7,7 @@ namespace Trending.Query.Dal
 {
     public sealed class ArticleTrendingsDal : TrendingDal
     {
-        public ArticleTrendingsDal() : base(TrendingDatabase.Reporting, "trendings") { }
+        public ArticleTrendingsDal() : base(new LocalDockerMongoConfig(), TrendingDatabase.Reporting, "trendings") { }
 
         public TrendingsDto GetAll()
         {

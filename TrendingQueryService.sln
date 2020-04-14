@@ -9,13 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 		VS.ASP.NET.Core.Web.API.png = VS.ASP.NET.Core.Web.API.png
 		VS.ASP.NET.Core.Web.App.png = VS.ASP.NET.Core.Web.App.png
+		VS.NET.Core.Console.App.png = VS.NET.Core.Console.App.png
+		VS.NET.Core.Test.png = VS.NET.Core.Test.png
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Api", "Trending.Query.Api\Trending.Query.Api.csproj", "{46E2827A-8E16-46AA-AA00-88B840D116B9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Dal", "Trending.Query.Dal\Trending.Query.Dal.csproj", "{DC5CF05F-C6E0-47B7-B169-01521D0A615D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Source.Copier", "Trending.Query.Source.Copier\Trending.Query.Source.Copier.csproj", "{59860895-73F6-4DE8-A971-9DD660FB3761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trending.Query.Source.Copier", "Trending.Query.Source.Copier\Trending.Query.Source.Copier.csproj", "{59860895-73F6-4DE8-A971-9DD660FB3761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Reporter", "Trending.Query.Reporter\Trending.Query.Reporter.csproj", "{7AC27B83-969D-4C7C-8488-4766EA20C668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trending.Query.Dal.Tests", "Trending.Query.Dal.Tests\Trending.Query.Dal.Tests.csproj", "{A8770F62-5806-41F4-A727-D4E3B07A96BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{59860895-73F6-4DE8-A971-9DD660FB3761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59860895-73F6-4DE8-A971-9DD660FB3761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59860895-73F6-4DE8-A971-9DD660FB3761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC27B83-969D-4C7C-8488-4766EA20C668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC27B83-969D-4C7C-8488-4766EA20C668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC27B83-969D-4C7C-8488-4766EA20C668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC27B83-969D-4C7C-8488-4766EA20C668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8770F62-5806-41F4-A727-D4E3B07A96BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

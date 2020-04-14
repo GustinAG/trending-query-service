@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Trending.Query.Reporter": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -54,6 +54,8 @@ db.articleevents.find()
 ```SQL
 use articletrendings
 db.getCollectionInfos({ }, true)
+db.articleeventscopy.find()
+db.trendings.find()
 ```
 
 ### Stop
@@ -88,6 +90,7 @@ ls -ln
  + &rarr; [CQRS *(Fowler)*](https://martinfowler.com/bliki/CQRS.html)
  + &rarr; [Data access layer *(Wikipedia)*](https://en.wikipedia.org/wiki/Data_access_layer)
  + &rarr; [Better Extract/Transform/Load (ETL) Practices in Data Warehousing (Continued) *(Goff)*](https://www.codemag.com/Article/1803051/Better-Extract-Transform-Load-ETL-Practices-in-Data-Warehousing-Continued)
+ + &rarr; [Using ETL Staging Tables *(Mitchell)*](https://www.timmitchell.net/post/2017/06/14/etl-staging-tables) - might be an option in a real world scenario
  + &rarr; [MongoDB ETL Best Practices](https://www.mongodb.com/partners/partner-program/technology/certification/etl-best-practices)
  + &rarr; [MongoSyphon](https://github.com/johnlpage/MongoSyphon) - might be a better choice intead of these C# .NET Core scheduled jobs
  + &rarr; [Ofelia - a job scheduler](https://github.com/mcuadros/ofelia) - might be the choice in a real world scenario

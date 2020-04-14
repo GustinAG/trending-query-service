@@ -2,6 +2,8 @@
 ## Visual Studio project templates
 ![Web-App](VS.ASP.NET.Core.Web.App.png)
 ![Web-API](VS.ASP.NET.Core.Web.API.png)
+![Console-App](VS.NET.Core.Console.App.png)
+![Test](VS.NET.Core.Test.png)
 
 ## Further VS Stuff
  + &rarr; [Visual Studio 2019 Launch: Docker all the things!](https://youtu.be/Tlswgxl_Xyk)
